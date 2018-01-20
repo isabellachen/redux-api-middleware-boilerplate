@@ -2,10 +2,14 @@ import React, { Component } from 'react'
 import {connect} from 'react-redux'
 
 import {
-  getRepos,
+  receiveRepos,
 } from '../actions'
 
 class App extends Component {
+  componentDidMount () {
+    this.props.receiveRepos()
+  }
+
   render () {
     return (
       <div className="App">
@@ -22,7 +26,7 @@ const mapStateToProps = (state) => {
 }
 
 const mapDispatchToProps = (dispatch) => ({
-  getRepos: () => dispatch(getRepos()),
+  receiveRepos: () => dispatch(receiveRepos()),
 })
 
 
