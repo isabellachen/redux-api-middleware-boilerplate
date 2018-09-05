@@ -1,1 +1,3 @@
-Simple React-Redux setup using an API middleware to show how to use Redux middleware for async actions.
+# Redux API Middleware Boilerplate
+
+Custom API middleware for React-Redux that fetches repositories from github.
